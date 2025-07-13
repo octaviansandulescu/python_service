@@ -4,3 +4,7 @@ fastapi
 uvicorn
 httpx
 ruff
+mypy
+pytest
+coverage
+pre-commit

@@ -25,4 +25,12 @@ jobs:
       run: |
         # Ensure ruff is installed
         ruff check .
-        
+    - name: Run tests
+      run: |
+        # Ensure pytest is installed
+        pytest --maxfail=1 --disable-warnings -q
+    - name: Run coverage
+      run: |
+        # Ensure coverage is installed
+        coverage run -m pytest
+        coverage report -m
